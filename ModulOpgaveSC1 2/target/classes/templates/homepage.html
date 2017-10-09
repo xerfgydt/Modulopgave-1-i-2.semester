@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+
+    <title>homepage</title>
+    <link rel="stylesheet"
+          href="/Users/rasmushecter/Documents/Datamatikker/Spring Applications/ModulOpgaveSC1 2/src/main/resources/static/style.css"
+          th:href="@{style.css}"/>
+</head>
+<body>
+<br>
+</br>
+<br>
+</br>
+<br>
+</br>
+<center>
+
+    <a th:href="@{/delete(id=${user.id})}" th:object="${user}">DELETE</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+    <a th:href="@{/update(id=${user.id})}" th:object="${user}">UPDATE</a>
+</center>
+</body>
+</html>
